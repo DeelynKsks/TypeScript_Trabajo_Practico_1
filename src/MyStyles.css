@@ -1,0 +1,35 @@
+.inputNumber {
+    border: solid 2px;
+    border-color: #ffd914;
+    border-radius: 15px;
+    color: black;
+    text-shadow: -1px 0 yellow, 0 1px yellow, 1px 0 yellow, 0 -1px yellow;
+    padding-left: 10px;
+}
+
+.selectCalculator {
+    border: solid 2px;
+    border-color: yellow;
+    border-radius: 15px;
+}
+
+.inputNumber:hover {
+    border-color: #eaff14;
+    transition: all 0.3s;
+}
+
+/* .inputNumber:focus {
+    border-color: yellow !important;
+} */
+
+.inputNumber:focus-visible {
+    border-color: yellow ;
+}
+
+.inputNumber::placeholder {
+    color: yellow;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
+  
+
+/* .selectCalculator:: */
