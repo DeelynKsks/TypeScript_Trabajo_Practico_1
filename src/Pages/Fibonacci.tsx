@@ -25,9 +25,11 @@ function Fibonacci() {
     }
 
   return (
-    <div>
+    <div className='divContainer textYellow'>
+        <h2>Contador de palabras</h2>
         <input className='inputNumber' type="number" placeholder="Número de elementos" value={count} onChange={e => setCount(e.target.value !== '' ? parseInt(e.target.value) : '')} />
-        <button onClick={generateFibonacciSequence}>Generar</button>
+        <br />
+        <button className='textYellow' onClick={generateFibonacciSequence}>Generar</button>
         {fibonacciSequence.length > 0 && (
             <div className='textYellow'>
                 <p>Secuencia de Fibonacci:</p>

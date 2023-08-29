@@ -33,17 +33,14 @@ function Contador() {
     };
 
   return (
-    <div>
-      <h2 className='textYellow'>Contador de números pares e impares</h2>
-      <h3 className='textYellow'>Ingrese el rango</h3>
+    <div className='divContainer textYellow'>
+      <h2>Contador de números pares e impares</h2>
+      <h3>Ingrese el rango</h3>
       <input className='inputNumber' type="number" placeholder="Inicio" value={start} onChange={e => setStart(e.target.value !== '' ? parseFloat(e.target.value) : '')} />
-      <br />
       <br />
       <input className='inputNumber' type="number" placeholder="Fin" value={end} onChange={e => setEnd(e.target.value !== '' ? parseFloat(e.target.value) : '')} />
       <br />
-      <br />
       <button className='textYellow' onClick={countNumbers}>Contar</button>
-      <br />
       <br />
       <div className='textYellow'>Números pares: {evenCount}</div>
       <div className='textYellow'>Números impares: {oddCount}</div>

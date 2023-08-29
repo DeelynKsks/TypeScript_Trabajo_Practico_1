@@ -50,21 +50,22 @@ function Calculadora() {
       };
 
   return (
-    <div>
+    <div className="divContainer textYellow">
+      <h2>Calculadora de números</h2>
+      <h4>Ingrese los valores a operar</h4>
       <input className="inputNumber" type="number" placeholder="Número 1" value={num1} onChange={handleNum1Change} />
       <br />
       <input className="inputNumber" type="number" placeholder="Número 2" value={num2} onChange={handleNum2Change} />
-      <br />
-      <br />
-      <select className="selectCalculator" value={operation} onChange={e => setOperation(e.target.value)}>
+      <h5 className='textYellow'>Seleccione la operación</h5>
+      <select className="selectCalculator textYellow" value={operation} onChange={e => setOperation(e.target.value)}>
         <option value="+">Suma</option>
         <option value="-">Resta</option>
         <option value="*">Multiplicación</option>
         <option value="/">División</option>
       </select>
       <br />
+      <button className="textYellow" onClick={calculate}>Calcular</button>
       <br />
-      <button onClick={calculate}>Calcular</button>
       <div>Resultado: {result !== undefined ? result : 'N/A'}</div>
     </div>
   )

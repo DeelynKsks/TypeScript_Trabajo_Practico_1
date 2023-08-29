@@ -3,22 +3,29 @@
 // import viteLogo from '/vite.svg'
 import './App.css'
 import './MyStyles.css'
+import Calculadora from './Pages/Calculadora';
+import Contador from './Pages/Contador'
+import Tabla from './Pages/Tabla'
+import Fibonacci from './Pages/Fibonacci'
 import ConvertidorTemperatura from './Pages/ConvertidorTemperatura'
-// import Calculadora from './Pages/Calculadora';
-// import Contador from './Pages/Contador'
-// import Tabla from './Pages/Tabla'
-// import Fibonacci from './Pages/Fibonacci'
+import ContadorPalabras from './Pages/ContadorPalabras';
 
 function App() {
   // const [count, setCount] = useState(0)
 
   return (
     <>
-     {/* <Calculadora /> */}
-     {/* <Contador /> */}
-     {/* <Tabla /> */}
-     {/* <Fibonacci /> */}
+     <Calculadora />
+     <br />
+     <Contador />
+     <br />
+     <Tabla />
+     <br />
+     <Fibonacci />
+     <br />
      <ConvertidorTemperatura />
+     <br />
+     <ContadorPalabras />
     </>
   )
 }

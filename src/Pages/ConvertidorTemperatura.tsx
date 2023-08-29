@@ -28,10 +28,12 @@ function ConvertidorTemperatura() {
     };
 
   return (
-    <div>
+    <div className='divContainer textYellow'>
+      <h2>Convertidor de temperatura</h2>
       <input className="inputNumber" type="number" placeholder="Celsius" value={celsius} onChange={handleCelsiusChange} />
       <br />
       <input className="inputNumber" type="number" placeholder="Fahrenheit" value={fahrenheit} onChange={handleFahrenheitChange} />
+      <br />
     </div>
   )
 }

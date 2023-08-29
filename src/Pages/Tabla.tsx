@@ -24,11 +24,11 @@ function Tabla() {
     };
 
   return (
-    <div>
+    <div className='divContainer textYellow'>
+      <h2>Tabla de multiplicar</h2>
       <input className="inputNumber" type="text" placeholder="Número" value={number} onChange={e => setNumber(e.target.value !== '' ? parseFloat(e.target.value) : '')}/>
       <br />
       <input className="inputNumber" type="text" placeholder="Límite" value={limit} onChange={e => setLimit(e.target.value !== '' ? parseFloat(e.target.value) : '')}/>
-      <br />
       <br />
       {generateTable()}
     </div>
